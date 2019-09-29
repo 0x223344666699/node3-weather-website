@@ -10,7 +10,7 @@ const forecast = (lat, lon, callback) => {
         } else {
             temp = temperature
             chance = precipProbability
-            callback(undefined, daily.data[0].summary + ' It is currently '+temp+' degrees out. There is a '+chance+'% chance of rain.')
+            callback(undefined, daily.data[0].summary + ' It is currently '+temp+' degrees out. There is a '+chance+'% chance of rain. \n Today\'s max temperature is '+ daily.data[0].temperatureMax +' degrees.')
         }
     })
 }
